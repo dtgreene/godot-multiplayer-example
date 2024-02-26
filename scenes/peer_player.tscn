@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=3 uid="uid://deqb0i0dfw1i7"]
+
+[ext_resource type="Script" path="res://scripts/peer_player.gd" id="1_ca3gf"]
+
+[node name="PeerPlayer" type="Node2D"]
+visible = false
+z_index = 1
+script = ExtResource("1_ca3gf")
+
+[node name="NameLabel" type="Label" parent="."]
+custom_minimum_size = Vector2(0, 64)
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -24.5
+offset_top = -23.0
+offset_right = 24.5
+grow_horizontal = 2
+grow_vertical = 0
+text = "Player"
+horizontal_alignment = 1

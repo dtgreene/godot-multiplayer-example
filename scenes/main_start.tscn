@@ -1,0 +1,45 @@
+[gd_scene load_steps=2 format=3 uid="uid://drpbeo2cn3eo7"]
+
+[ext_resource type="Script" path="res://scripts/main_start.gd" id="1_tmxkn"]
+
+[node name="MainStart" type="Node2D"]
+script = ExtResource("1_tmxkn")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="StartScreen" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/StartScreen"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/StartScreen/HBoxContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+theme_override_constants/separation = 16
+alignment = 1
+
+[node name="PlayerName" type="LineEdit" parent="CanvasLayer/StartScreen/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Player"
+placeholder_text = "Player Name"
+alignment = 1
+
+[node name="Host" type="Button" parent="CanvasLayer/StartScreen/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "HOST"
+
+[node name="Join" type="Button" parent="CanvasLayer/StartScreen/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "JOIN"
